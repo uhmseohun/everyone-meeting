@@ -67,7 +67,7 @@ const router = new Router({
       meta: {
         title: 'COIN'
       }
-    },
+    }
   ]
 })
 

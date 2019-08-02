@@ -3,8 +3,8 @@ export default {
   name: 'Navbar',
   computed: {
     pageTitle () {
-      return this.$route.meta.title ?
-        this.$route.meta.title : '모두의 모임'
+      return this.$route.meta.title
+        ? this.$route.meta.title : '모두의 모임'
     }
   }
 }
