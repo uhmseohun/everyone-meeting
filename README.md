@@ -1,4 +1,4 @@
-# labrador-web
+# everyone-meeting
 
 ## Project setup
 ```
