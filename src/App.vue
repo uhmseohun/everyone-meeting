@@ -31,13 +31,12 @@ body {
   height: 100%;
 
   &__content {
-    font-family: 'LotteMartHappy';
+    font-family: 'Gothic A1', sans-serif;
     margin: 0 auto;
-    padding: 0 15px;
-    padding-top: 2rem;
+    padding: 2rem 15px 0 15px;
 
     @media (min-width: 650px) {
-      padding: 0 10rem;
+      padding: 3rem 10rem 0 10rem;
     }
   }
 }
