@@ -28,6 +28,7 @@ export default {
   text-align: center;
   border-radius: 10px;
   background-position: center;
+  background-size: cover;
 
   &__name {
     color: white;
