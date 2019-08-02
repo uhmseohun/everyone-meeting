@@ -18,10 +18,7 @@ const router = new Router({
     {
       path: '/',
       name: 'home',
-      component: Home,
-      meta: {
-        title: '모두의 모임'
-      }
+      component: Home
     },
     {
       path: '/match',
@@ -76,7 +73,7 @@ const router = new Router({
 
 router.beforeEach((to, from, next) => {
   if (to.meta.title) {
-    document.title = `모두의 만남 - ${to.meta.title}`
+    document.title = `모두의 모임 - ${to.meta.title}`
   }
   next()
 })
