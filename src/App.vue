@@ -49,14 +49,16 @@ body {
     height: 2.5rem;
     font-size: 1.2rem;
     width: 100%;
-    border-bottom: solid rgb(100, 100, 100) 1px;
+    border: solid rgb(100, 100, 100) 1px;
+    border-radius: 50px;
+    text-indent: 1rem;
 
     &:not(:first-child) {
       margin-top: 1rem;
     }
     &:focus {
       outline: none;
-      border-bottom: solid black 1px;
+      border: solid black 1px;
     }
   }
 
