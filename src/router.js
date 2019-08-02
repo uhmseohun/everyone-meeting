@@ -5,6 +5,7 @@ import Home from '@/views/Home.vue'
 import Match from '@/views/Match.vue'
 import Place from '@/views/Place.vue'
 import Amount from '@/views/Amount.vue'
+import ManagementAmount from '@/views/ManagementAmount.vue'
 import Community from '@/views/Community.vue'
 import Service from '@/views/Service.vue'
 import Coin from '@/views/Coin.vue'
@@ -42,6 +43,14 @@ const router = new Router({
       component: Amount,
       meta: {
         title: '운동량 정보'
+      }
+    },
+    {
+      path: '/management/amount',
+      name: 'managementAmount',
+      component: ManagementAmount,
+      meta: {
+        title: '운동량 관리'
       }
     },
     {
