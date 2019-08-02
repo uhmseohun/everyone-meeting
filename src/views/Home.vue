@@ -30,6 +30,11 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    push (to) {
+      this.$router.push(to)
+    }
   }
 }
 </script>
@@ -37,13 +42,12 @@ export default {
 <template>
 <div class="home">
   <div
+    @click="push(service.to)"
     v-for="(service, i) in services"
     :key="`service-${i}`"
     class="home__menu"
   >
-    <router-link :to="service.to">
-      {{ service.title }}
-    </router-link>
+    {{ service.title }}
   </div>
 </div>
 </template>
