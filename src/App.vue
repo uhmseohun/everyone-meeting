@@ -33,7 +33,7 @@ body {
   &__content {
     font-family: 'Gothic A1', sans-serif;
     margin: 0 auto;
-    padding: 2rem 15px 0 15px;
+    padding: 1rem 15px 0 15px;
 
     @media (min-width: 650px) {
       padding: 3rem 10rem 0 10rem;
