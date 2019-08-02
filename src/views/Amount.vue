@@ -1,5 +1,5 @@
 <script>
-import AmountChart from '@/components/AmountChart.vue'
+import AmountChart from '@/components/charts/AmountChart.vue'
 
 import Calorie from '@/assets/calorie.png'
 import Clock from '@/assets/clock.png'
@@ -28,6 +28,11 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    push (to) {
+      this.$router.push(to)
+    }
   }
 }
 </script>
@@ -51,7 +56,10 @@ export default {
     </div>
   </div>
   <hr>
-  <div class="amount__detail">
+  <div
+    @click="push('/management/amount')"
+    class="amount__detail"
+  >
     자세히 보기
   </div>
 </div>
