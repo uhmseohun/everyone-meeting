@@ -42,7 +42,7 @@ export default {
   <amount-chart class="amount__chart" />
   <hr>
   <div class="amount__item-box">
-    <div 
+    <div
       :key="`item-${i}`"
       v-for="(amount, i) in amounts"
       class="amount__item"
