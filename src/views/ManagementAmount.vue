@@ -9,7 +9,8 @@ export default {
   data () {
     return {
       current: 0,
-      durations: ['DAY', 'WEEK', 'MONTH']
+      durations: ['DAY', 'WEEK', 'MONTH'],
+      day: new Date()
     }
   },
   methods: {
@@ -22,7 +23,7 @@ export default {
 
 <template>
 <div class="amount">
-  <select-week />
+  <select-week v-model="day"/>
   <hr>
   <div class="amount__duration-box">
     <div

@@ -13,7 +13,8 @@ export default {
         new Date('May 20, 2019 17:22:10'),
         new Date('May 21, 2019 17:22:10'),
         new Date('May 22, 2019 17:22:10')
-      ]
+      ],
+      selection: 0
     }
   },
   methods: {
@@ -22,6 +23,10 @@ export default {
     },
     getDate (date) {
       return format(date, 'DD')
+    },
+    toggle (i) {
+      this.selection = i
+      this.$emit('input', this.days[this.selection])
     }
   }
 }
@@ -34,8 +39,10 @@ export default {
     v-for="(day, i) in days"
     :class="{
       'week__day': true,
-      'week__day-sun': getDay(day) === 'Sun'
+      'week__day-sun': getDay(day) === 'Sun',
+      'week__day-selected': i === selection
     }"
+    @click="toggle(i)"
   >
     <span class="week__text">{{ getDay(day) }}</span>
     <span class="week__text">{{ getDate(day) }}</span>
@@ -50,8 +57,16 @@ export default {
 
   &__day {
     text-align: center;
+    padding: 5px;
+    user-select: none;
+
     &-sun {
       color: red;
+    }
+
+    &-selected {
+      border: 1.3px solid rgb(114, 155, 188);;
+      border-radius: 8px;
     }
   }
 
