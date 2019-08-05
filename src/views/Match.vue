@@ -26,7 +26,8 @@ export default {
           place: '어딘가',
           image: Kanu
         }
-      ]
+      ],
+      search: [ '지역', '팀', '연령' ]
     }
   }
 }
@@ -34,6 +35,29 @@ export default {
 
 <template>
 <div class="match">
+  <div class="match__title">
+    매칭 검색 / 등록
+  </div>
+  <div class="match__search">
+    <div
+      :key="`search-${i}`"
+      v-for="(item, i) in search"
+      class="match__search-item"
+    >
+      {{ item }}
+      <div class="match__search-item__expand">
+        +
+      </div>
+    </div>
+  </div>
+  <div class="match__button">
+    <div class="match__button-item">
+      매치 검색
+    </div>
+    <div class="match__button-item">
+      매치 등록
+    </div>
+  </div>
   <hr>
   <div class="match__title">
     오늘의 매칭 정보
@@ -75,6 +99,41 @@ export default {
     border-radius: 5px;
     float: right;
     margin: 1rem 0;
+  }
+
+  &__search {
+    margin-top: 1rem;
+    &-item {
+      padding: 1rem 0.5rem;
+      border-bottom: solid gray 1px;
+
+      &:first-child {
+        border-top: solid gray 1px;
+      }
+
+      &__expand {
+        color: red;
+        font-weight: bold;
+        float: right;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    margin: 1.3rem 0;
+
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 50%;
+      height: 3rem;
+      background-color: rgb(70, 70, 70);
+      color: white;
+    }
   }
 }
 </style>
