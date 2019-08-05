@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Home from '@/views/Home.vue'
+import Menu from '@/views/Menu.vue'
 import Match from '@/views/Match.vue'
 import Place from '@/views/Place.vue'
 import Amount from '@/views/Amount.vue'
@@ -20,6 +21,11 @@ const router = new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/menu',
+      name: 'menu',
+      component: Menu
     },
     {
       path: '/match',
