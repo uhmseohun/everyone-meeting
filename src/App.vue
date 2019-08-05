@@ -86,4 +86,13 @@ body {
     }
   }
 }
+
+.float {
+  &-left {
+    float: left;
+  }
+  &-right {
+    float: right;
+  }
+}
 </style>
