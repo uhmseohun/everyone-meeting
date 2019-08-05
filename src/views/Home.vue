@@ -40,9 +40,9 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  background: #36D1DC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #36D1DC;
+  background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);
+  background: linear-gradient(to bottom, #5B86E5, #36D1DC);
 
   height: calc(100% - 16px); // for navbar, padding height
   display: flex;
