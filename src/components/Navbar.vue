@@ -1,6 +1,6 @@
 <script>
-import Menu from '@/assets/menu.png'
 import Home from '@/assets/home.png'
+import Back from '@/assets/back.png'
 
 export default {
   name: 'Navbar',
@@ -13,12 +13,15 @@ export default {
   methods: {
     push (to) {
       this.$router.push(to)
+    },
+    back () {
+      this.$router.go(-1)
     }
   },
   data () {
     return {
       Home,
-      Menu
+      Back
     }
   }
 }
@@ -27,10 +30,10 @@ export default {
 <template>
 <div class="navbar">
   <div
-    @click="push('/menu')"
+    @click="back()"
     class="navbar__menu"
   >
-    <img class="navbar__icon" :src="Menu">
+    <img class="navbar__icon" :src="Back">
   </div>
   <div class="navbar__title">
     {{ pageTitle }}
