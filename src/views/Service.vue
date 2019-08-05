@@ -11,11 +11,14 @@ import Prod7 from '@/assets/product/7.png'
 import Prod8 from '@/assets/product/8.png'
 import Prod9 from '@/assets/product/9.png'
 
+import Ad from '@/assets/ad/1.png'
+
 export default {
   name: 'Service',
   components: { Product },
   data () {
     return {
+      Ad,
       menus: [ 'CART', 'ORDER', 'MY PAGE', 'DELIVERY' ],
       categories: [ '≪', '신발', '의류', '장비', '헬스케어', '기타', '≫' ],
       products: {
@@ -120,6 +123,10 @@ export default {
       </span>
     </div>
   </div>
+  <img
+    class="service__advertisement"
+    :src="Ad"
+  >
 </div>
 </template>
 
@@ -202,6 +209,11 @@ export default {
       padding: 2px;
       border: solid gray 1px;
     }
+  }
+
+  &__advertisement {
+    margin-top: 10px;
+    width: 100%;
   }
 }
 </style>
