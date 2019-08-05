@@ -33,8 +33,12 @@ export default {
           'background-image': `url('${room.detail.profile}')`
         }"
       />
-      <span class="room__info-detail__text">
-        {{ room.detail.info }}
+      <span>
+        {{ room.detail.info.count }}
+        <span v-if="room.detail.info.time">·</span>
+        <span class="room__info-detail-time">
+          {{ room.detail.info.time }}
+        </span>
       </span>
     </span>
   </div>
@@ -76,6 +80,10 @@ export default {
         background-size: cover;
         vertical-align: middle;
         margin-right: 3px;
+      }
+
+      &-time {
+        color: blue;
       }
     }
   }
