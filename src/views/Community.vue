@@ -147,7 +147,7 @@ export default {
       }
 
       &-current {
-        font-weight: 700;
+        font-weight: bold;
       }
     }
   }
