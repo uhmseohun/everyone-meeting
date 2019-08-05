@@ -1,20 +1,30 @@
 <script>
 import MatchItem from '@/components/MatchItem.vue'
 
+import Soccer from '@/assets/sport/soccer.png'
+import Kanu from '@/assets/sport/kanu.png'
+import Running from '@/assets/sport/running.png'
+
 export default {
   name: 'Match',
   components: { MatchItem },
   data () {
     return {
+      Soccer,
+      Kanu,
+      Running,
       matches: [
         {
-          place: '홍익대학교'
+          place: '홍익대학교',
+          image: Soccer
         },
         {
-          place: '잠실종합운동경기장'
+          place: '잠실종합운동경기장',
+          image: Running
         },
         {
-          place: '어딘가'
+          place: '어딘가',
+          image: Kanu
         }
       ]
     }

@@ -12,14 +12,23 @@ export default {
 
 <template>
 <div class="item">
-  <div class="item__team item__left">
+  <div
+    class="item__team item__left"
+    :style="{
+      'background-image': `url('${match.image}')`
+    }"
+  >
   </div>
   <div class="item__info">
     <span class="item__versus">VS</span>
     <span class="item__detail">장소 - {{ match. place }}</span>
   </div>
-  <div class="item__team item__right">
-  </div>
+  <div
+    class="item__team item__right"
+    :style="{
+      'background-image': `url('${match.image}')`
+    }"
+  />
 </div>
 </template>
 
@@ -34,6 +43,7 @@ export default {
     height: 80px;
     border-radius: 50%;
     border: 3px solid #5B86E5;
+    background-size: cover;
   }
 
   &__info {
