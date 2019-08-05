@@ -27,7 +27,15 @@ export default {
       {{ room.tags.map(v => `#${v}`).join(' ') }}
     </span>
     <span class="room__info-detail">
-      {{ room.detail.info }}
+      <div
+        class="room__info-detail__profile"
+        :style="{
+          'background-image': `url('${room.detail.profile}')`
+        }"
+      />
+      <span class="room__info-detail__text">
+        {{ room.detail.info }}
+      </span>
     </span>
   </div>
 </div>
@@ -59,6 +67,16 @@ export default {
     &-detail {
       color: gray;
       font-size: 0.8rem;
+
+      &__profile {
+        display: inline-block;
+        height: 1.3rem;
+        width: 1.3rem;
+        border-radius: 7px;
+        background-size: cover;
+        vertical-align: middle;
+        margin-right: 3px;
+      }
     }
   }
 }
