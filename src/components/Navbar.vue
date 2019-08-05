@@ -30,19 +30,19 @@ export default {
 <template>
 <div class="navbar">
   <div
-    @click="back()"
-    class="navbar__menu"
+    @click="push('/')"
+    class="navbar__home"
   >
-    <img class="navbar__icon" :src="Back">
+    <img class="navbar__icon" :src="Home">
   </div>
   <div class="navbar__title">
     {{ pageTitle }}
   </div>
   <div
-    @click="push('/')"
-    class="navbar__home"
+    @click="back()"
+    class="navbar__menu"
   >
-    <img class="navbar__icon" :src="Home">
+    <img class="navbar__icon" :src="Back">
   </div>
 </div>
 </template>
@@ -70,18 +70,18 @@ export default {
   }
 
   &__menu {
-    float: left;
-    display: flex;
-    align-items: center;
-    clear: both;
-    margin-right: auto;
-  }
-
-  &__home {
     float: right;
     display: flex;
     align-items: center;
+    clear: both;
     margin-left: auto;
+  }
+
+  &__home {
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
   }
 
   &__icon {
