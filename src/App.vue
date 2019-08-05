@@ -3,13 +3,22 @@ import Navbar from '@/components/Navbar.vue'
 
 export default {
   name: 'App',
-  components: { Navbar }
+  components: { Navbar },
+  computed: {
+    showNavbar () {
+      const route = this.$route.fullPath
+      return route !== '/' && route !== '/join'
+    }
+  }
 }
 </script>
 
 <template>
   <div id="app" class="app">
-    <navbar class="app__navbar"/>
+    <navbar
+      v-show="showNavbar"
+      class="app__navbar"
+    />
     <router-view class="app__content"/>
   </div>
 </template>
