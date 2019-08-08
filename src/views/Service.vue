@@ -132,6 +132,8 @@ export default {
 
 <style lang="scss" scoped>
 .service {
+  padding-bottom: 7rem;
+
   &__menu {
     display: flex;
     justify-content: space-around;
@@ -212,8 +214,11 @@ export default {
   }
 
   &__advertisement {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     margin-top: 10px;
-    width: 100%;
+    width: 100vw;
   }
 }
 </style>
