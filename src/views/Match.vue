@@ -23,7 +23,7 @@ export default {
           image: Running
         },
         {
-          place: '어딘가',
+          place: '한강',
           image: Kanu
         }
       ],
