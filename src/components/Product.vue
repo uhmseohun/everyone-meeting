@@ -16,9 +16,14 @@ export default {
     class="product__image"
     :src="product.image"
   >
-  <span class="product__name">
-    {{ product. name }}
-  </span>
+  <div class="product__info">
+    <span class="product__name">
+      {{ product. name }}
+    </span>
+    <span class="product__price">
+      최저 {{ product.price }}원
+    </span>
+  </div>
 </div>
 </template>
 
@@ -32,7 +37,26 @@ export default {
 
   &__image {
     width: 6rem;
+    height: 80%;
     display: block;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 20%;
+    min-height: 5.5rem;
+  }
+
+  &__name {
+    display: block;
+  }
+
+  &__price {
+    font-style: oblique;
   }
 }
 </style>

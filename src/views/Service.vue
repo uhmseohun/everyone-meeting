@@ -25,41 +25,50 @@ export default {
         shoes: [
           {
             name: '나이키 메큐리얼 슈퍼플라이 6프로',
-            image: Prod1
+            image: Prod1,
+            price: '151,000'
           },
           {
             name: '나이키 티엠포 레전드 8엘리트 FG',
-            image: Prod2
+            image: Prod2,
+            price: '269,000'
           },
           {
             name: '나이키 머큐리얼 슈퍼플라이 360엘리트 FG',
-            image: Prod3
+            image: Prod3,
+            price: '263,200'
           },
           {
             name: '카이리 5 EP',
-            image: Prod4
+            image: Prod4,
+            price: '149,000'
           },
           {
             name: '나이키 줌 프릭1',
-            image: Prod5
+            image: Prod5,
+            price: '113,680'
           },
           {
             name: '캠프라인 루카스 트레킹화',
-            image: Prod6
+            image: Prod6,
+            price: '113,680'
           }
         ],
         recommend: [
           {
             name: '레키 쿰부 DSS 3단 일자형 등산스틱 100~145cm',
-            image: Prod7
+            image: Prod7,
+            price: '149,000'
           },
           {
             name: '요넥스 아크세이버 FB레드 배드민턴 라켓',
-            image: Prod8
+            image: Prod8,
+            price: '156,640'
           },
           {
             name: 'NutraKey BCAA Optima 포스트 운동 제품',
-            image: Prod9
+            image: Prod9,
+            price: '64,400'
           }
         ]
       }
@@ -172,6 +181,7 @@ export default {
 
     &-item {
       width: 30%;
+      height: 100%;
       margin: 10px 0;
     }
   }
