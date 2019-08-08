@@ -204,7 +204,8 @@ export default {
 
     &-item {
       width: 30%;
-      margin: 25px 0;
+      height: 100%;
+      margin: 10px 0;
     }
   }
 
