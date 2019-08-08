@@ -62,10 +62,10 @@ export default {
   }
 
   &__left {
-    margin-right: 20px;
+    margin-right: auto;
   }
   &__right {
-    margin-left: 20px;
+    margin-left: auto;
   }
 }
 </style>
