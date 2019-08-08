@@ -120,8 +120,8 @@ export default {
     border-radius: 50px;
     padding: 10px;
     width: 40%;
-    height: 2rem;
-    margin-bottom: 2rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
 
     color: white;
 
