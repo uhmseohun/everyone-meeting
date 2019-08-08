@@ -141,6 +141,8 @@ export default {
       display: flex;
       align-items: center;
 
+      color: gray;
+
       &:not(:first-child) {
         padding-left: 10px;
         border-left: solid gray 1px;
@@ -148,6 +150,7 @@ export default {
 
       &-current {
         font-weight: bold;
+        color: black;
       }
     }
   }

@@ -139,9 +139,6 @@ export default {
 
     &-item {
       font-size: 1.1rem;
-      &-current {
-        font-weight: bold;
-      }
     }
   }
 
@@ -156,8 +153,11 @@ export default {
     border-top: solid gray 1.6px;
     border-bottom: solid gray 1.6px;
 
+    color: gray;
+
     &-current {
       font-weight: bold;
+      color: black;
     }
   }
 
