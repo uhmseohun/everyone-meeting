@@ -64,10 +64,11 @@ export default {
 
 <style lang="scss" scoped>
 .coin {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: calc(100% - 4.5rem);
+  min-height: calc(100% - 9.5rem);
 
   background: #36D1DC;
   background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);
@@ -100,8 +101,8 @@ export default {
   }
 
   &__menu {
-    position: fixed;
-    bottom: 5rem;
+    position: absolute;
+    bottom: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
