@@ -31,27 +31,27 @@ export default {
     <div class="coin__box">
       <div class="coin__box__title">
         Today's &nbsp;
-        <img :src="Coin">
+        <img class="coin__box__icon" :src="Coin">
       </div>
       <span class="coin__box__content">240</span>
     </div>
     <div class="coin__box">
       <div class="coin__box__title">
         전체 보유 &nbsp;
-        <img :src="Coin">
+        <img class="coin__box__icon" :src="Coin">
       </div>
       <span class="coin__box__content">1520</span>
     </div>
     <div class="coin__box">
       <div class="coin__box__title">
         지난사용내역 &nbsp;
-        <img :src="Coin">
+        <img class="coin__box__icon" :src="Coin">
       </div>
     </div>
     <div class="coin__box">
       <div class="coin__box__title">
         사용하러가기 &nbsp;
-        <img :src="Coin">
+        <img class="coin__box__icon" :src="Coin">
       </div>
     </div>
   </div>
@@ -132,6 +132,11 @@ export default {
 
     &__content {
       font-weight: bold;
+    }
+
+    &__icon {
+      height: 1rem;
+      width: 1rem;
     }
   }
 
