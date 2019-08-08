@@ -53,7 +53,12 @@ export default {
       개인정보 수집 및 이용안내
     </span>
     <div class="join__form-item">
-      <div class="join__form-check" />
+      <div
+        @click="check.privacy = check.privacy === '' ? '✓' : ''"
+        class="join__form-check"
+      >
+        {{ check.privacy }}
+      </div>
       개인정보 취급 방침 동의
       <div class="join__form-detail">
         자세히 보기
