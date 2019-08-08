@@ -24,11 +24,12 @@ export default {
       },
       plugins: {
         datalabels: {
+          textAlign: 'center',
           font: {
             size: '15'
           },
           formatter (value, context) {
-            return `${context.chart.data.labels[context.dataIndex]} : ${context.dataset.data[context.dataIndex]}`
+            return `${context.chart.data.labels[context.dataIndex]}\n${context.dataset.data[context.dataIndex]}`
           }
         }
       }

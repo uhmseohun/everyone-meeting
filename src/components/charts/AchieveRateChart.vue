@@ -12,7 +12,7 @@ export default {
       datasets: [
         {
           label: '운동 목표 달성량',
-          backgroundColor: ['#df8244', '#f9c044', '#4d72be', '#fbe6a0'],
+          backgroundColor: ['#df8244', '#f9c044', '#4d72be', '#b1ff52'],
           data: [420, 190, 22, 300]
         }
       ]

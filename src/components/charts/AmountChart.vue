@@ -11,14 +11,28 @@ export default {
       labels: ['비활동', '유산소', '근력운동', '근력심화'],
       datasets: [
         {
-          backgroundColor: ['#345e96', '#d09e7f', '#a4c2e3', '#fbe6a0'],
+          backgroundColor: ['#345e96', '#d09e7f', '#a4c2e3', '#b1ff52'],
           data: [43, 26, 22, 9]
         }
       ]
     },
     options: {
       responsive: true,
-      maintainAspectRatio: false
+      maintainAspectRatio: false,
+      tooltips: {
+        enabled: false
+      },
+      plugins: {
+        datalabels: {
+          color: 'white',
+          font: {
+            size: '15'
+          },
+          formatter (value, context) {
+            return `${context.dataset.data[context.dataIndex]}%`
+          }
+        }
+      }
     }
   }),
 
