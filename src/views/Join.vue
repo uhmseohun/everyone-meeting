@@ -5,7 +5,11 @@ export default {
   name: 'Join',
   data () {
     return {
-      Profile
+      Profile,
+      check: {
+        service: '',
+        privacy: ''
+      }
     }
   },
   methods: {
@@ -33,7 +37,12 @@ export default {
       서비스 이용약관
     </span>
     <div class="join__form-item">
-      <div class="join__form-check" />
+      <div
+        @click="check.service = check.service === '' ? '✓' : ''"
+        class="join__form-check"
+      >
+        {{ check.service }}
+      </div>
       서비스 이용약관 동의
       <div class="join__form-detail">
         자세히 보기
@@ -122,6 +131,10 @@ export default {
       border: solid rgb(230, 230, 250) 2.5px;
       border-radius: 6px;
       margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
     }
 
     &-detail {
