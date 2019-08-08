@@ -24,8 +24,6 @@ export default {
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Gothic+A1&display=swap');
-
 a {
   text-decoration: none;
   color: black;
@@ -40,7 +38,6 @@ body {
   height: 100%;
 
   &__content {
-    font-family: 'Gothic A1', sans-serif;
     margin: 0 auto;
     padding: 1rem 15px 0 15px;
 
@@ -52,7 +49,6 @@ body {
 
 .input {
   &__text {
-    font-family: 'Gothic A1', sans-serif;
     display: block;
     border: 0;
     height: 2.5rem;
@@ -72,7 +68,6 @@ body {
   }
 
   &__button {
-    font-family: 'LotteMartHappy';
     font-size: 1.2rem;
     height: 2.5rem;
     background-color: white;

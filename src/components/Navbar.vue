@@ -48,8 +48,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css?family=Gothic+A1&display=swap');
-
 .navbar {
   display: flex;
   align-items: center;
@@ -63,7 +61,6 @@ export default {
   &__title {
     font-size: 1.3rem;
     color: white;
-    font-family: 'Gothic A1', sans-serif;
     user-select: none;
     text-align: center;
     clear: both;
