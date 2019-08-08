@@ -38,6 +38,7 @@ export default {
   &__image {
     width: 6rem;
     height: 80%;
+    min-height: 6.5rem;
     display: block;
   }
 
@@ -48,7 +49,7 @@ export default {
     align-items: center;
 
     height: 20%;
-    min-height: 5.5rem;
+    min-height: 8rem;
   }
 
   &__name {
