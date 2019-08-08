@@ -204,10 +204,7 @@ export default {
       width: 100%;
       height: 1.8rem;
       border-radius: 50px;
-
-      &::placeholder {
-        padding-left: 1rem;
-      }
+      padding-left: 1rem;
     }
 
     &-room {
