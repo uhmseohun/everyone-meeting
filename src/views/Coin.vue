@@ -79,8 +79,8 @@ export default {
   }
 
   &__circle {
-    width: 45vw;
-    height: 45vw;
+    width: 17rem;
+    height: 17rem;
 
     margin-top: 1rem;
 
@@ -119,7 +119,7 @@ export default {
     border-radius: 50px;
     padding: 10px;
     width: 40%;
-    height: 2.5rem;
+    height: 2rem;
     margin-bottom: 2rem;
 
     color: white;
