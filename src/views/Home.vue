@@ -74,6 +74,9 @@ export default {
     border-radius: 50px;
     height: 3rem;
     width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__logo {
