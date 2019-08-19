@@ -27,6 +27,10 @@ export default {
         {
           title: 'COIN',
           to: '/coin'
+        },
+        {
+          title: '구독 서비스',
+          to: '/subscribe'
         }
       ]
     }

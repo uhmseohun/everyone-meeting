@@ -11,6 +11,7 @@ import ManagementAmount from '@/views/ManagementAmount.vue'
 import Community from '@/views/Community.vue'
 import Service from '@/views/Service.vue'
 import Coin from '@/views/Coin.vue'
+import Subscribe from '@/views/Subscribe'
 
 Vue.use(Router)
 
@@ -86,6 +87,14 @@ const router = new Router({
       component: Coin,
       meta: {
         title: 'COIN'
+      }
+    },
+    {
+      path: '/subscribe',
+      name: 'Subscribe',
+      component: Subscribe,
+      meta: {
+        title: '구독서비스'
       }
     }
   ]
